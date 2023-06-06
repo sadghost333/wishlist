@@ -1,0 +1,72 @@
+$yellowHigh: #FFC107;
+$YellowLow: #dda400;
+$blueHigh: #00BCD4;
+$blueLow: #005e74;
+$blueDark: #0B0F2B;
+$blueGray: #333554;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: $blueDark;
+    height: 1000px;
+    padding-top: 10px;
+}
+
+.header {
+    height: 50px;
+    background-color: $blueGray;
+    border-radius: 10px;
+}
+
+.header-text-wrapper{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text {
+    font-size: 30px;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 7px;
+}
+
+.click-block{
+    position: relative;
+    z-index: 2;
+    margin-top: 200px;
+    margin-left: 25%;
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blueGray;
+    border-radius: 10px;
+}
+
+.wish-list{
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+    width: 500px;
+    height: 350px;
+    margin-left: 25%;
+    border-radius: 12px;
+    background-color: $blueGray;
+}
