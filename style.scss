@@ -46,7 +46,7 @@ $blueGray: #333554;
 .click-block{
     position: relative;
     z-index: 2;
-    margin-top: 200px;
+    margin-top: 50px;
     margin-left: 25%;
     width: 500px;
     height: 50px;
@@ -62,11 +62,35 @@ $blueGray: #333554;
 
 .wish-list{
     position: relative;
+    padding-top: 50px;
     z-index: 1;
     margin-top: -50px;
     width: 500px;
-    height: 350px;
+    height: 600px;
     margin-left: 25%;
     border-radius: 12px;
-    background-color: $blueGray;
+    background-color: $YellowLow;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.wish-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.item-icon {
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.item-icon:hover{
+    width: 120px;
+    height: 120px;
 }
