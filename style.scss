@@ -4,6 +4,7 @@ $blueHigh: #00BCD4;
 $blueLow: #005e74;
 $blueDark: #0B0F2B;
 $blueGray: #333554;
+$yellowLight: #ffe992;    
 
 * {
     margin: 0;
@@ -47,8 +48,8 @@ $blueGray: #333554;
     position: relative;
     z-index: 2;
     margin-top: 50px;
-    margin-left: 25%;
-    width: 500px;
+    margin-left: 40%;
+    width: 200px;
     height: 50px;
     font-size: 20px;
     color: #FFFFFF;
@@ -62,17 +63,19 @@ $blueGray: #333554;
 
 .wish-list{
     position: relative;
-    padding-top: 50px;
+    overflow: hidden;
+    // padding-top: 50px;
     z-index: 1;
     margin-top: -50px;
     width: 500px;
     height: 600px;
     margin-left: 25%;
     border-radius: 12px;
+    gap: 50px;
     background-color: $YellowLow;
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -80,13 +83,15 @@ $blueGray: #333554;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: $yellowLight;
 }
 
 .item-icon {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     transition: 0.5s;
 }
 
