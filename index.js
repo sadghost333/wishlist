@@ -1,16 +1,17 @@
-const clickBtn = document.querySelector('.click-block');
-const wishList =document.querySelector('.wish-list');
+const clickBtn = document.querySelector('.wish-btn');
+const wishList = document.querySelector('.central-img-wrapper');
+const image = document.querySelector(".central-img");
 
 let isOpen = false;
 
 function activateAccordion() {
     if(isOpen){
-        wishList.style.height = 0;
-        wishList.style.paddingTop = 0;
+        wishList.style.width = "446px";
+        image.style.rotate = '';
         return
     }
-    wishList.style.height = "550px";
-    wishList.style.paddingTop = '30px';
+    wishList.style.width = "800px";
+    image.style.rotate = "360deg";
 }
 
 function activateBtn() {
