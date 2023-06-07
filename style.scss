@@ -48,8 +48,8 @@ $yellowLight: #ffe992;
     position: relative;
     z-index: 2;
     margin-top: 50px;
-    margin-left: 40%;
-    width: 200px;
+    margin-left: 25%;
+    width: 500px;
     height: 50px;
     font-size: 20px;
     color: #FFFFFF;
@@ -59,16 +59,17 @@ $yellowLight: #ffe992;
     justify-content: center;
     background-color: $blueGray;
     border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
 }
 
 .wish-list{
     position: relative;
     overflow: hidden;
-    // padding-top: 50px;
     z-index: 1;
-    margin-top: -50px;
+    margin-top: -25px;
     width: 500px;
-    height: 600px;
+    height: 0;
     margin-left: 25%;
     border-radius: 12px;
     gap: 50px;
@@ -78,6 +79,7 @@ $yellowLight: #ffe992;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    transition: 1s;
 }
 .wish-item {
     display: flex;
