@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 .container {
@@ -111,7 +112,8 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    background-color: #c0c0c0;
+    //background-color: #c0c0c0;
+    transition: 0.5s;
 }
 
 .right-items-wrapper {
@@ -130,7 +132,19 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    background-color: #c0c0c0;
+    //background-color: #c0c0c0;
+    transition: 0.5s;
+}
+
+.wish-item{
+    background: rgb(255,138,95);
+    background: radial-gradient(circle, rgba(255,138,95,1) 52%, rgba(204,57,66,1) 100%);
+}
+
+.wish-item:hover {
+    height: 170px;
+    width: 170px;
+    transition: 0.5s;
 }
 
 .btn-wrapper {
@@ -247,6 +261,10 @@ main {
         width: 90%;
         height: auto;
     }
+    .wish-item:hover{
+        width: 51%;
+        height: auto;
+    }
 
 } 
 
@@ -262,6 +280,10 @@ main {
     }
     .left-items-wrapper div {
         width: 85%;
+        height: auto;
+    }
+    .wish-item:hover{
+        width: 86%;
         height: auto;
     }
 }
