@@ -66,6 +66,7 @@ main {
 }
 
 .welcome-text {
+    margin-bottom: 5%;
     font-size: 40px;
     text-align: center;
     letter-spacing: 0.2rem;
@@ -73,7 +74,7 @@ main {
 }
 
 .central-img-wrapper {
-    margin-top: 50px;
+    margin: 0 auto;
     height: 450px;
     width: 446px;
     display: flex;
@@ -133,7 +134,7 @@ main {
 }
 
 .btn-wrapper {
-    margin-top: 50px;
+    margin: 0 auto;
     height: 150px;
     width: 300px;
     display: flex;
@@ -194,7 +195,7 @@ main {
         font-size: 100%;
     }
 
-    .main{
+    main{
         width: 100%;
     }
 
@@ -212,13 +213,13 @@ main {
     .right-items-wrapper{
         width: 50%;
         justify-content: center;
-        gap: 15%;
+        gap: 10%;
     }
 
     .left-items-wrapper{
         width: 50%;
         justify-content: center;
-        gap: 15%;
+        gap: 10%;
     }
 
     .right-items-wrapper div {
@@ -256,11 +257,11 @@ main {
         height: 215px;
     } 
    .right-items-wrapper div {
-        width: 90%;
+        width: 85%;
         height: auto;
     }
     .left-items-wrapper div {
-        width: 90%;
+        width: 85%;
         height: auto;
     }
 }
