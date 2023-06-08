@@ -58,10 +58,11 @@ main {
 }
 
 .main {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 100vh;
 }
 
@@ -140,10 +141,11 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  gap: 10px;
 }
 
 .quote-text {
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   letter-spacing: 0.1rem;
   color: #FF8A5F;
@@ -183,4 +185,67 @@ main {
 
 .wish-btn:hover::before {
   width: 9em;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+  .header-items a {
+    font-size: 100%;
+  }
+  .main {
+    width: 100%;
+    height: 100vh;
+  }
+  .central-img-wrapper {
+    width: 65%;
+    height: 35%;
+  }
+  .central-img {
+    width: 100%;
+    height: auto;
+  }
+  .right-items-wrapper {
+    width: 50%;
+    justify-content: center;
+    gap: 15%;
+  }
+  .left-items-wrapper {
+    width: 50%;
+    justify-content: center;
+    gap: 15%;
+  }
+  .right-items-wrapper div {
+    width: 50%;
+    height: auto;
+  }
+  .right-items-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-items-wrapper div {
+    width: 50%;
+    height: auto;
+  }
+  .left-items-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wish-item-img {
+    width: 90%;
+    height: auto;
+  }
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .right-items-wrapper div {
+    width: 90%;
+    height: auto;
+  }
+  .left-items-wrapper div {
+    width: 90%;
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
