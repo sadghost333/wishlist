@@ -58,12 +58,11 @@ main {
 }
 
 .main {
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 100vh;
+  background-color: #434343;
 }
 
 .welcome-text {
@@ -196,7 +195,6 @@ main {
   }
   .main {
     width: 100%;
-    height: 100vh;
   }
   .central-img-wrapper {
     width: 65%;
@@ -240,6 +238,9 @@ main {
   }
 }
 @media screen and (max-width: 400px) {
+  .central-img-wrapper {
+    height: 215px;
+  }
   .right-items-wrapper div {
     width: 90%;
     height: auto;
