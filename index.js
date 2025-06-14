@@ -2,8 +2,24 @@ const clickBtn = document.querySelector('.wish-btn');
 const wishList = document.querySelector('.central-img-wrapper');
 const image = document.querySelector(".central-img");
 const container = document.querySelector(".container");
+const leftImgs = document.querySelector(".left-items-wrapper");
+const rightImgs = document.querySelector(".right-items-wrapper");
 
 let isOpen = false;
+function hideItems () {
+    if(container.offsetWidth > 1140){
+        leftImgs.style.display = 'none';
+        rightImgs.style.display = 'none';
+        return
+    }
+    return
+}
+
+window.onload = (event) => {
+    hideItems();
+    return
+    
+};
 
 function activateAccordion() {
     if(!isOpen){
@@ -11,6 +27,7 @@ function activateAccordion() {
             image.style.width= '100%';
             return 
         }
+        
         wishList.style.width = `${(image.offsetWidth)}px`;
         wishList.style.height = `${(image.offsetHeight)}px`;
         image.style.rotate = '';
@@ -20,8 +37,11 @@ function activateAccordion() {
         image.style.width= '0%';
         return
     }
+
     wishList.style.width = "80%";
     image.style.rotate = "360deg";
+    leftImgs.style.display = 'flex';
+    rightImgs.style.display = 'flex';
 }
 
 
@@ -29,6 +49,7 @@ clickBtn.addEventListener ('click', function (){
     if(isOpen){
         isOpen = false;
         activateAccordion();
+        hideItems();
         return
     }
     isOpen = true;

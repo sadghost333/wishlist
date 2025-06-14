@@ -21,7 +21,7 @@ body {
 
 header {
     height: 80px;
-    background-color: #434343;
+    background-color: #110f05;
 }
 
 .header-items-wrapper {
@@ -48,7 +48,7 @@ header {
     font-size: 25px;
     text-align: center;
     letter-spacing: 0.2rem;
-    color: #FFF3BF;
+    color: #a91a0d;
     transition: 1s;
 }
 
@@ -58,7 +58,7 @@ header {
 
 main {
     height: 100vh;
-    background-color: #434343;
+    background-color: #110f05;
 }
 
 .main {
@@ -66,7 +66,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: #434343;
+    background-color: #110f05;
 }
 
 .welcome-text {
@@ -74,7 +74,7 @@ main {
     font-size: 40px;
     text-align: center;
     letter-spacing: 0.2rem;
-    color: #FF8A5F;
+    color: #a91a0d;
 }
 
 .central-img-wrapper {
@@ -86,7 +86,7 @@ main {
     justify-content: space-around;
     gap: 10px;
     border-radius: 20px;
-    background-color: #2b2b2b;
+    background-color: #110f05;
     overflow: hidden;
     transition: 1s;
 }
@@ -94,7 +94,7 @@ main {
 .central-img {
     height: 430px;
     width: 430px;
-    border-radius: 20px;
+    border-radius: 50%;
     transition: 1s;
 }
 
@@ -108,7 +108,6 @@ main {
 }
 
 .left-items-wrapper div {
-    display: none;
     height: 150px;
     width: 150px;
     display: flex;
@@ -140,9 +139,23 @@ main {
 }
 
 .wish-item{
-    background: rgb(255,138,95);
-    background: radial-gradient(circle, rgba(255,138,95,1) 52%, rgba(204,57,66,1) 100%);
+    width: 90%;
+    height: auto;   
+    background: #a91a0d;
+    background: radial-gradient(circle, #a91a0d 38%, #200401 100%);
 }
+
+.wish-item-img {
+  margin: 0 auto;
+  max-width: 90%;
+  max-height: 90%;
+  height: auto;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  transition: 0.5s;
+}
+
 
 .wish-item:hover {
     height: 170px;
@@ -164,8 +177,8 @@ main {
 .quote-text {
     font-size: 20px;
     text-align: center;
-    letter-spacing: 0.1rem;
-    color: #FF8A5F;
+    letter-spacing: 0.3rem;
+    color: #a91a0d;
 }
 
 .wish-btn {
@@ -194,7 +207,7 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to right, #FF5733 0%, #ff8a5f 50%, #fff3bf 100%);
+    background-image: linear-gradient(to right, #A9333A 0%, #a91a0d 50%, #ab0c0c 100%);
     transition: .5s ease;
     display: block;
     z-index: -1;
@@ -217,8 +230,14 @@ main {
     }
 
     .central-img-wrapper{
-        width: 65%;
-        height: 35%;
+        position: relative; // обов’язково
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
     }
 
     .central-img{
@@ -261,8 +280,11 @@ main {
         align-items: center;
     }
     .wish-item-img{
-        width: 90%;
+        max-width: 100%;
         height: auto;
+        display: block;
+        cursor: pointer;
+        object-fit: contain;
     }
     .wish-item:hover{
         width: 51%;
@@ -275,7 +297,7 @@ main {
     and (max-width: 400px)  { 
 
     .central-img-wrapper{
-        height: 215px;
+        min-height: 215px;
     } 
    .right-items-wrapper div {
         width: 85%;
